@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+venv/
+.env
+*.db
+*.log
+# runtime state
+trades.json
+memoria_trades.json
+fast_paper_state.json*
+fast_paper_events.jsonl
+trade_counter.json
+*.bak*
+.DS_Store
