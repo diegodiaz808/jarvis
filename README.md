@@ -1,6 +1,6 @@
-# JARVIS — AI Trading Assistant on Discord
+# JARVIS - AI Trading Assistant on Discord
 
-Personal trading copilot that lives in Discord. JARVIS watches crypto and stock markets 24/7, runs three independent strategy engines through a confluence scoring system, paper-trades an intraday engine, analyzes everything with a **local LLM (Ollama)** — and reports, logs and takes commands through Discord channels.
+Personal trading copilot that lives in Discord. JARVIS watches crypto and stock markets 24/7, runs three independent strategy engines through a confluence scoring system, paper-trades an intraday engine, analyzes everything with a **local LLM (Ollama)** - and reports, logs and takes commands through Discord channels.
 
 **Paper trading by default.** The live path (Bybit) sits behind a `PAPER_TRADING` flag and a production-grade risk manager.
 
@@ -26,10 +26,10 @@ bots/trading_bot/
   engine.py             confluence engine: global scan loop, confirmation loop,
                         market-context refresh, scoring, position management
   zone_flip.py          structural S/R zones: real swing highs/lows, touch clusters,
-                        S→R / R→S flips — no synthetic bands
+                        S→R / R→S flips - no synthetic bands
   wave_hunt.py          Elliott-style wave tops via TradingView data (weeks/months horizon)
   smart_flow.py         order-flow: CVD, funding rate, OI, long/short ratio, taker ratio
-  fast_paper.py         fast intraday engine — paper/shadow only, never sends real orders
+  fast_paper.py         fast intraday engine - paper/shadow only, never sends real orders
   confirmacion.py       entry confirmation layer
   risk_manager.py       sizing v3: per-symbol qty precision, exposure/margin separation,
                         real monetary risk, defensive validations
@@ -41,7 +41,7 @@ Every strategy returns a normalized packet (`score`, `direccion`, `leverage`, `r
 
 ## The AI layer
 
-Analysis runs through a local Ollama model — no API costs, no data leaving the machine. JARVIS uses it to explain market conditions, audit closed trades (post-trade analysis loop), and even **generate Pine Script indicators on demand** from Discord.
+Analysis runs through a local Ollama model - no API costs, no data leaving the machine. JARVIS uses it to explain market conditions, audit closed trades (post-trade analysis loop), and even **generate Pine Script indicators on demand** from Discord.
 
 ## Run
 
@@ -55,4 +55,4 @@ python main.py
 
 Python · asyncio · discord.py · Ollama (local LLM) · Bybit · Binance/CoinGecko/CoinGlass/Twelve Data · TradingView bridge · SQLite · numpy
 
-> Related: [pumpfun-sniper](https://github.com/diegodiaz808/pumpfun-sniper) — an earlier, narrower bot focused on sniping pump.fun launches on Solana.
+> Related: [pumpfun-sniper](https://github.com/diegodiaz808/pumpfun-sniper) - an earlier, narrower bot focused on sniping pump.fun launches on Solana.
