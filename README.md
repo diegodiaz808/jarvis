@@ -55,4 +55,4 @@ python main.py
 
 Python · asyncio · discord.py · Ollama (local LLM) · Bybit · Binance/CoinGecko/CoinGlass/Twelve Data · TradingView bridge · SQLite · numpy
 
-> Related: [pumpfun-sniper](https://github.com/diegodiaz808/pumpfun-sniper) - an earlier, narrower bot focused on sniping pump.fun launches on Solana.
+> Related: [Memecoin Sniper](https://github.com/diegodiaz808/pumpfun-sniper) - an earlier, narrower bot focused on sniping pump.fun launches on Solana.
