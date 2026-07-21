@@ -1,4 +1,4 @@
-# JARVIS - AI Trading Assistant on Discord
+# Jarvis Trader - AI Trading Assistant on Discord
 
 Personal trading copilot that lives in Discord. JARVIS watches crypto and stock markets 24/7, runs three independent strategy engines through a confluence scoring system, paper-trades an intraday engine, analyzes everything with a **local LLM (Ollama)** - and reports, logs and takes commands through Discord channels.
 
